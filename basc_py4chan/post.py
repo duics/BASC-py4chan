@@ -92,6 +92,10 @@ class Post(object):
     def spoiler(self):
         return self._data.get('spoiler') == 1
 
+    @property
+    def country(self):
+        return self._data.get('country')
+
     """
         Legacy undocumented compatibility wrappers for File attributes that will be depreciated eventually. 
         We strongly recommend users to use the `Post.file` property instead, which gives you a whole File object that has all the attributes.

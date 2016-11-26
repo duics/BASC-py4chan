@@ -21,6 +21,7 @@ def main():
     print('Timestamp',  topic.timestamp)
     print('Datetime',   repr(topic.datetime))
     print('Subject',    topic.subject)
+    print('Country',    topic.country)
     print('Comment',    topic.text_comment)
     print('Replies',    thread.replies)
 
