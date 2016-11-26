@@ -96,6 +96,10 @@ class Post(object):
     def country(self):
         return self._data.get('country')
 
+    @property
+    def country_name(self):
+        return self._data.get('country_name')
+
     """
         Legacy undocumented compatibility wrappers for File attributes that will be depreciated eventually. 
         We strongly recommend users to use the `Post.file` property instead, which gives you a whole File object that has all the attributes.
